@@ -1,0 +1,44 @@
+.main-gallery {
+text-align: center;
+margin-bottom: 20px
+}
+#gallery {
+display: block;
+text-align: center;
+margin: 0 auto;
+}
+.main-gallery > img {
+display: none;
+}
+.main-gallery input {
+visibility: hidden;
+position: absolute;
+}
+.main-gallery > input:checked + img {
+  max-width: 100%;
+  height: auto;
+  transition: all 0.5s;
+  vertical-align: middle;
+  display:inline-block;
+}
+.thumb-container label {
+display: inline-block;
+margin: 5px;
+height: 72px;
+max-width:100%;
+}
+.thumb-container label:hover {
+cursor: pointer;
+opacity: 0.5;
+}
+.thumb-container label img {
+width: 85px;
+height: 85px;
+display: block;
+padding: 4px;
+margin-bottom: 20px;
+line-height: 1.42857143;
+background-color: #ffffff;
+border: 1px solid #dddddd;
+border-radius: 4px;
+}
